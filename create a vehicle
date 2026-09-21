@@ -1,0 +1,15 @@
+class Vehicle:
+    def __init__(self, brand,model):
+        self.brand, self.model = brand, model
+
+class Car(Vehicle):
+    pass
+
+class Bike(Vehicle):
+    pass
+
+car = Car("Toyota", "Fortuner")
+bike = Bike("Yamaha", "R15")
+
+print(car.brand, car.model)
+print(bike.brand, bike.model)
