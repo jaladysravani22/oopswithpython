@@ -1,0 +1,39 @@
+class Parent:
+    def shape(self):
+        print("shapes")
+
+
+class shape1(Parent):
+    def __init__(self, r):
+        self.area = 3.14 * r * r
+
+    def circle(self):
+        print("circle")
+        print("area:", self.area)
+
+
+class shape2(Parent):
+    def __init__(self, length, breadth):
+        self.area = length * breadth
+
+    def rectangle(self):
+        print("rectangle")
+        print("area:", self.area)
+
+
+class shape3(Parent):
+    def __init__(self, base, height):
+        self.area = 0.5 * base * height
+
+    def triangle(self):
+        print("triangle")
+        print("area:", self.area)
+
+
+s1 = shape1(5)
+s2 = shape2(10, 5)
+s3 = shape3(6, 4)
+
+s1.circle()
+s2.rectangle()
+s3.triangle()
